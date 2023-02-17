@@ -1,0 +1,50 @@
+.heroes-container {
+    display: grid;
+    justify-content: center;
+}
+
+.heroes-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1350px));
+    grid-template-rows: repeat(3, 225px);
+    grid-template-areas:
+        'legion-agility hellbourne-agility'
+        'legion-intelligence hellbourne-intelligence'
+        'legion-strength hellbourne-strength';
+    min-height: 0;
+    min-width: 0;
+    max-width: 1350px;
+ }
+
+.legion-agility {
+    grid-area: legion-agility;
+}
+.hellbourne-agility {
+    grid-area: hellbourne-agility;
+}
+.legion-intelligence {
+    grid-area: legion-intelligence;
+}
+.hellbourne-intelligence {
+    grid-area: hellbourne-intelligence;
+}
+.legion-strength {
+    grid-area: legion-strength;
+}
+.hellbourne-strength {
+    grid-area: hellbourne-strength;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 75px));
+    gap: 0px;
+    min-height: 0;
+    min-width: 0;
+}
+
+.hero-icon {
+    max-width: 75px;
+    border: 1px solid #3c8dbc;
+}

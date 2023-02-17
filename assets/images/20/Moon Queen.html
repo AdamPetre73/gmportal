@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html lang="en"> 	<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script> <script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app203.us.archive.org';v.server_ms=363;archive_analytics.send_pageview({});});</script> <script type="text/javascript" src="/_static/js/bundle-playback.js?v=kjExWF7-" charset="utf-8"></script> <script type="text/javascript" src="/_static/js/wombat.js?v=Jjml7g96" charset="utf-8"></script> <script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://www.heroesofnewerth.com/heroes/view/20","20220629172703","https://web.archive.org/","web","/_static/",
+	      "1656523623");
+</script> <link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" /> <link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" /> <!-- End Wayback Rewrite JS Include -->  		<title>Heroes of Newerth - Hero - Moon Queen</title>		<meta charset="utf-8"/> 		<script src="/web/20220629172703js_/https://www.heroesofnewerth.com/js/jquery-1.9.1.min.js" type="text/javascript"></script> 		<script src="/web/20220629172703js_/https://www.heroesofnewerth.com/js/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script> 		<script src="/web/20220629172703js_/https://www.heroesofnewerth.com/js/jquery.easing.1.3.js" type="text/javascript"></script>  		<link href="/web/20220629172703cs_/https://www.heroesofnewerth.com/css/ui-darkness/jquery-ui-1.10.0.custom.css" rel="stylesheet" type="text/css" charset="utf-8"/> 		<link href="/web/20220629172703cs_/https://www.heroesofnewerth.com/css/buttons.css" rel="stylesheet" type="text/css" charset="utf-8"/>  		<link href="/web/20220629172703cs_/https://www.heroesofnewerth.com/fonts/stylesheet.css" rel="stylesheet" type="text/css" charset="utf-8"/> 		<link href="/web/20220629172703cs_/https://www.heroesofnewerth.com/css/base.css" rel="stylesheet" type="text/css" charset="utf-8"/> 		<link href="/web/20220629172703cs_/https://www.heroesofnewerth.com/css/filterLists.css" rel="stylesheet" type="text/css" charset="utf-8"/> 		<link href="/web/20220629172703cs_/https://www.heroesofnewerth.com/css/fonts.css" rel="stylesheet" type="text/css" charset="utf-8"/> 		<link href="/web/20220629172703cs_/https://www.heroesofnewerth.com/css/gradients.css" rel="stylesheet" type="text/css" charset="utf-8"/>  		 		 		<link href="/web/20220629172703cs_/https://www.heroesofnewerth.com/page_css/heroes/view.css?=1656523623" media="screen" rel="stylesheet" type="text/css"> 		<!-- Javascript --> 		<script type="text/javascript">
+				$(document).ready(function()
+				{
+					$('.drop').hover(function() {
+						if ($(this).hasClass('com'))
+							$(this).parent('.mNav').find('.com').addClass('hovering');
+
+						if ($(this).hasClass('gui'))
+							$(this).parent('.mNav').find('.gui').addClass('hovering');
+
+						if ($(this).hasClass('sto'))
+							$(this).parent('.mNav').find('.sto').addClass('hovering');
+
+						if ($(this).hasClass('med'))
+							$(this).parent('.mNav').find('.med').addClass('hovering');
+
+						if ($(this).hasClass('for'))
+							$(this).parent('.mNav').find('.for').addClass('hovering');
+
+						if ($(this).hasClass('ser'))
+							$(this).parent('.mNav').find('.ser').addClass('hovering');
+					}, function() {
+						if ($(this).hasClass('com') && $(this).parent('.mNav').find('.com').hasClass('hovering'))
+							$(this).parent('.mNav').find('.com').removeClass('hovering');
+
+						if ($(this).hasClass('gui') && $(this).parent('.mNav').find('.gui').hasClass('hovering'))
+							$(this).parent('.mNav').find('.gui').removeClass('hovering');
+
+						if ($(this).hasClass('sto') && $(this).parent('.mNav').find('.sto').hasClass('hovering'))
+							$(this).parent('.mNav').find('.sto').removeClass('hovering');
+
+						if ($(this).hasClass('med') && $(this).parent('.mNav').find('.med').hasClass('hovering'))
+							$(this).parent('.mNav').find('.med').removeClass('hovering');
+
+						if ($(this).hasClass('for') && $(this).parent('.mNav').find('.for').hasClass('hovering'))
+							$(this).parent('.mNav').find('.for').removeClass('hovering');
+
+						if ($(this).hasClass('ser') && $(this).parent('.mNav').find('.ser').hasClass('hovering'))
+							$(this).parent('.mNav').find('.ser').removeClass('hovering');
+					});
+
+					$('body').css("min-height", $(window).height() - 300 + "px");
+					$('#mainContent').css("min-height", $(window).height() - 300 + "px");
+
+					//START Smooth Scroll Anchors
+					//console.log($(".scroll").length);
+					$(".scroll").click(function(event) {
+						event.preventDefault();
+						var $anchor = $('#' + this.hash.substring(1));
+
+						//Mobile
+						if ($('body').hasClass('mobile')) {
+							$('html,body').animate({
+								scrollTop: $anchor.offset().top - 20
+							}, 600);
+						}
+						else {
+							$('html,body').animate({
+								scrollTop: $anchor.offset().top - 50
+							}, 600);
+						}
+					});
+					//END Smooth Scroll Anchors
+				});
+
+				var hideTimer = null;
+
+				// Resize Window Effects
+				$(window).resize(function()
+				{
+					$('body').css("min-height", $(window).height() - 300 + "px");
+					$('#mainContent').css("min-height", $(window).height() - 300 + "px");
+				});
+
+				// Dropdown Menu
+				function showMenu(div)
+				{
+					$('#' + div).stop().fadeTo("fast", 1).show();
+
+					if (hideTimer != null) {
+						clearTimeout(hideTimer);
+						hideTimer = null;
+					}
+
+					if (div != "news")
+						hideIt("news");
+
+					if (div != "guides")
+						hideIt("guides");
+
+					if (div != "community")
+						hideIt("community");
+
+					if (div != "store")
+						hideIt("store");
+
+					if (div != "services")
+						hideIt("services");
+
+					if (div != "forums")
+						hideIt("forums");
+
+					if (div != "media")
+						hideIt("media");
+				}
+
+				function hideMenu(div)
+				{
+					hideTimer = setTimeout(function()
+					{
+						$("#" + div).fadeTo("fast", 0, function()
+						{
+							$(this).hide();
+						});
+					}, 200);
+				}
+
+				function showIt(div)
+				{
+					$('#' + div).show();
+				}
+
+				function hideIt(div)
+				{
+					$('#' + div).hide();
+				}
+		</script>  		<style> 			/* MOBILE AKA SMALL WINDOWS */ 			@media screen and (max-width: 1100px) { 				#loginBar 				{ 					position: relative; 					margin: auto; 				}  				#loginBar .centerIt 				{ 					max-width: 1060px; 				}  				.addSpace 				{ 					width: 183px; 				} 			} 		</style> 					<style> 				body { 					background-image: url( "/web/20220629172703im_/https://www.heroesofnewerth.com/images/default_05.jpg" ); 				} 			</style> 			</head> 	<body><!-- BEGIN WAYBACK TOOLBAR INSERT --> <style type="text/css"> body {   margin-top:0 !important;   padding-top:0 !important;   /*min-width:800px !important;*/ } </style> <script>__wm.rw(0);</script> <div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;"> <div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;"> <div id="donato" style="position:relative;width:100%;">   <div id="donato-base">     <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20220629172703/https%3A//www.heroesofnewerth.com/heroes/view/20" 	    scrolling="no" frameborder="0" style="width:100%; height:100%">     </iframe>   </div> </div><div id="wm-ipp-inside">   <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">     <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">       <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>     </div>     <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">       <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://www.heroesofnewerth.com/heroes/view/20" onfocus="this.focus();this.select();" style="flex:1;"/><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20220629172703" /><input type="submit" value="Go" />       </form>       <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">                 <div class="s" id="wm-nav-captures" style="flex:1;">                     <a class="t" href="/web/20220629172703*/https://www.heroesofnewerth.com/heroes/view/20" title="See a list of every capture for this URL">101 captures</a>           <div class="r" title="Timespan for captures of this URL">03 Feb 2013 - 05 Jul 2022</div>           </div>         <div class="k">           <a href="" id="wm-graph-anchor">             <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">               <canvas id="wm-sparkline-canvas" width="700" height="27" border="0"></canvas>             </div>           </a>         </div>       </div>     </div>     <div class="n">       <table>         <tbody>           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->           <tr class="m">             <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20220122152603/https://heroesofnewerth.com/heroes/view/20" title="22 Jan 2022"><strong>Jan</strong></a></td>             <td class="c" id="displayMonthEl" title="You are here: 17:27:03 Jun 29, 2022">JUN</td>             <td class="f" nowrap="nowrap">Jul</td>           </tr>           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->           <tr class="d">             <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20220621214509/https://www.heroesofnewerth.com/heroes/view/20" title="21:45:09 Jun 21, 2022"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>             <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 17:27:03 Jun 29, 2022">29</td>             <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20220705095830/https://heroesofnewerth.com/heroes/view/20" title="09:58:30 Jul 05, 2022"><img src="/_static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a></td>           </tr>           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->           <tr class="y">             <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20210620004258/https://www.heroesofnewerth.com/heroes/view/20" title="20 Jun 2021"><strong>2021</strong></a></td>             <td class="c" id="displayYearEl" title="You are here: 17:27:03 Jun 29, 2022">2022</td>             <td class="f" nowrap="nowrap">2023</td>           </tr>         </tbody>       </table>     </div>     <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">       <div id="wm-btns" style="text-align:right;height:23px;">                 <span class="xxs">           <div id="wm-save-snapshot-success">success</div>           <div id="wm-save-snapshot-fail">fail</div>           <a id="wm-save-snapshot-open" href="#" title="Share via My Web Archive" >             <span class="iconochive-web"></span>           </a>           <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">             <span class="iconochive-person"></span>           </a>           <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>         </span>                 <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>         <a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>       </div>       <div id="wm-share" class="xxs">         <a href="/web/20220629172703/http://web.archive.org/screenshot/https://www.heroesofnewerth.com/heroes/view/20"            id="wm-screenshot"            title="screenshot">           <span class="wm-icon-screen-shot"></span>         </a>         <a href="#" id="wm-video" title="video">           <span class="iconochive-movies"></span>         </a>         <a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20220629172703/https://www.heroesofnewerth.com/heroes/view/20" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>         <a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20220629172703/https://www.heroesofnewerth.com/heroes/view/20" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>       </div>       <div style="padding-right:2px;text-align:right;white-space:nowrap;">         <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>       </div>     </div>   </div>     <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">                     <div id="wm-capinfo-collected-by">     <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>     <div style="padding:3px;position:relative" id="wm-collected-by-content">       <div style="display:inline-block;vertical-align:top;width:49%;"> 			<span class="c-logo" style="background-image:url(https://archive.org/services/img/save-page-now)"></span> 		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/save-page-now" target="_new"><span class="wm-title">Save Page Now</span></a></div> 	      </div>     </div>     </div>     <div id="wm-capinfo-timestamps">     <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>     <div>       <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>       <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>     </div>     </div>   </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20220629172703/https://www.heroesofnewerth.com/heroes/view/20</div> <script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","https://www.heroesofnewerth.com/heroes/view/20","20220629172703",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script> <!-- END WAYBACK TOOLBAR INSERT --> 		<div id="fb-root"></div> 		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//web.archive.org/web/20220629172703/https://connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>  		<!-- This is for the Login Bar --> 		<div id="loginBar" class="gDark"> 			<div class="centerIt"> 				<!-- Login --> 				<div class="right"> 											<!-- User is not logged in yet --> 						<div id="notLogged"> 							<form method="post" onsubmit="Login.Login($('#loginUsername').val(), $('#loginPassword').val()); return false;"> 								<div class="btn-red" style="width: 77px; margin: 3px 0 0 7px; float: right;"> 									<div class="btn-left"></div> 									<input class="btn-center login loginbtn" style="border-radius: 0; float: left; font-size: 14px; margin: 0; padding: 0; width: 60px !important;" type="submit" tabindex="3" name="submit" value="LOGIN"/> 									<div class="btn-right"></div> 								</div> 								<input id="loginPassword" tabindex="2" class="inputThis gGrey right" autocomplete="off" type="text" name="password" value="PASSWORD" placeholder="PASSWORD" onfocus="if(this.type=='text'){this.type='password';this.value='';}"/> 								<input id="loginUsername" tabindex="1" class="inputThis gGrey right" type="text" name="nickname" value="USERNAME" placeholder="USERNAME" onclick="if (this.value == 'USERNAME'){this.value = '';}" onblur="if (this.value == ''){this.value='USERNAME';}"/> 							</form> 						</div> 									</div>  				<!-- Social Buttons --> 				<div id="social" class="left"> 					<a target="_blank" class="facebook left" href="https://web.archive.org/web/20220629172703/http://www.facebook.com/heroesofnewerth"></a> 					<a target="_blank" class="twitter left" href="https://web.archive.org/web/20220629172703/http://www.twitter.com/heroesofnewerth"></a> 					<a target="_blank" class="youtube left" href="https://web.archive.org/web/20220629172703/http://www.youtube.com/s2games"></a> 					<a target="_blank" class="reddit left" href="https://web.archive.org/web/20220629172703/http://www.reddit.com/r/heroesofnewerth"></a> 					<div class="fb-like left fb_edge_widget_with_comment fb_iframe_widget" data-href="http://www.facebook.com/heroesofnewerth" data-send="false" data-width="350" data-height="30" data-show-faces="false" data-font="tahoma" data-colorscheme="dark"></div> 				</div> 			</div> 		</div>  		<div id="mLeaves"></div>  		<!-- Main Navigation --> 		<div class="navigation"> 			<!-- Chains --> 			<img class="chain" src="/web/20220629172703im_/https://www.heroesofnewerth.com/images/chain.png" alt="chain" style="top: 42px; margin-left: -488px;"/> 			<img class="chain" src="/web/20220629172703im_/https://www.heroesofnewerth.com/images/chain.png" alt="chain" style="top: 28px; margin-left: -85px;"/> 			<img class="chain" src="/web/20220629172703im_/https://www.heroesofnewerth.com/images/chain.png" alt="chain" style="top: 28px; margin-left: 66px;"/> 			<img class="chain" src="/web/20220629172703im_/https://www.heroesofnewerth.com/images/chain.png" alt="chain" style="top: 42px; margin-left: 463px;"/>  			<!-- Core Navigation --> 			<div class="mNav navLeft left"> 				<a href="/web/20220629172703/https://www.heroesofnewerth.com/landing/community/" class="button com left" onmouseover="showMenu('community')" onmouseout="hideMenu('community')"><p class="bold uppercase yellow fontM">COMMUNITY</p></a> 				<div class="drop com fontXXXS regular" id="community" onmouseover="showMenu('community')" onmouseout="hideMenu('community')"> 					<!--<a href="/news/">NEWS</a>--> 					<a href="https://web.archive.org/web/20220629172703/http://www.honcast.com/">HONCAST</a> 					<a href="https://web.archive.org/web/20220629172703/http://www.hontour.com/">HON TOUR</a> 					<!-- <a href="/ladder/">PLAYER LADDER</a> --> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/fanmedia/">FAN MEDIA</a> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/fansites/">COMMUNITY SITES</a> 				</div> 				<a href="/web/20220629172703/https://www.heroesofnewerth.com/landing/guides/" class="button gui left" onmouseover="showMenu('guides')" onmouseout="hideMenu('guides')"><p class="bold uppercase yellow fontM">GAMEPLAY</p></a> 				<div class="drop gui fontXXXS regular" id="guides" onmouseover="showMenu('guides')" onmouseout="hideMenu('guides')"> 					<!--<a href="explore.php">TAKE THE TOUR</a> 					<a href="overview.php">GAMEPLAY OVERVIEW</a>--> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/heroes/">HEROES</a> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/items/">ITEMS</a> 					<!--<a href="/thewareffort/">THE WAR EFFORT</a>--> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/guides/">STRATEGY GUIDES</a> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/maps/">MAPS</a> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/matchstats/">MATCH STATS [NEW]</a> 				</div> 				<a href="/web/20220629172703/https://www.heroesofnewerth.com/landing/store/" class="button sto left" onmouseover="showMenu('store')" onmouseout="hideMenu('store')"><p class="bold uppercase yellow fontM">STORE</p></a> 				<div class="drop sto fontXXXS regular" id="store" onmouseover="showMenu('store')" onmouseout="hideMenu('store')"> 					<!-- <a href="store.php">IN-GAME STORE</a> 					<a href="merchandise/php">MERCHANDISING</a>--> 					<!-- <a href="/store/gold/">BUY GOLD COINS</a> --> 					<!--<a target="_blank" href="/store/ecards/">GIFT AN ECARD</a>--> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/store/accounticon/">CUSTOM ACCOUNT ICON</a> 					<!--<a href="/store/subaccount/">ADD A SUB ACCOUNT</a> 					<a href="/store/reset/">RESET ACCOUNT STATS</a> 					<a href="/redeem">REDEEM A CODE</a>--> 				</div> 			</div>  			<div class="mNav navRight right"> 				<a href="/web/20220629172703/https://www.heroesofnewerth.com/landing/services/" class="button ser right" onmouseover="showMenu('services')" onmouseout="hideMenu('services')"><p class="bold uppercase yellow fontM">SERVICES</p></a> 				<div class="drop ser fontXXXS regular" id="services" onmouseover="showMenu('services')" onmouseout="hideMenu('services')"> 					<!-- Disable account registration for December 31, 2021 (as per HoN service shutdown announcement) --> 					<!-- <a href="/create/">CREATE AN ACCOUNT</a> --> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/download/">DOWNLOAD CLIENT</a> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/support/">SUPPORT</a> 					<a href="https://web.archive.org/web/20220629172703/http://rap.heroesofnewerth.com/">PLAYER RAP</a> 				</div> 				<a href="https://web.archive.org/web/20220629172703/http://forums.heroesofnewerth.com/" class="button for right" onmouseover="showMenu('forums')" onmouseout="hideMenu('forums')"><p class="bold uppercase yellow fontM">FORUMS</p></a> 				<div class="drop for fontXXXS regular" id="forums" onmouseover="showMenu('forums')" onmouseout="hideMenu('forums')"> 					<!-- 					<a href="http://forums.heroesofnewerth.com/">MAIN</a> 					<a href="http://forums.heroesofnewerth.com/forumdisplay.php?83">COMMUNITY POSITIONS</a> 					<a href="http://forums.heroesofnewerth.com/forumdisplay.php?321">EVENTS</a> 					--> 				</div> 				<a href="/web/20220629172703/https://www.heroesofnewerth.com/landing/media/" class="button med right" onmouseover="showMenu('media')" onmouseout="hideMenu('media')"><p class="bold uppercase yellow fontM">MEDIA</p></a> 				<div class="drop med fontXXXS regular" id="media" onmouseover="showMenu('media')" onmouseout="hideMenu('media')"> 					<a target="_blank" href="https://web.archive.org/web/20220629172703/http://www.youtube.com/s2games">VIDEOS</a> 					<a href="https://web.archive.org/web/20220629172703/http://lore.heroesofnewerth.com/hon-story-arcs/">LORE</a> 					<a href="https://web.archive.org/web/20220629172703/http://lore.heroesofnewerth.com/category/hon-art/">ARTWORK</a> 					<a href="https://web.archive.org/web/20220629172703/http://lore.heroesofnewerth.com/category/hon-art/wallpapers/">WALLPAPERS</a> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/screens/">SCREENSHOTS</a> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/fanmedia/">FAN MEDIA</a> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/fsk/">FANKIT</a> 				</div> 			</div>  			<!-- Logo and Play for Free / Create --> 			<a id="mLogo" href="/web/20220629172703/https://www.heroesofnewerth.com/"></a> 			<div id="p4f"> 									<a class="btn-p4f" href="/web/20220629172703/https://www.heroesofnewerth.com/create/"></a> 							</div> 		</div>  		<!-- CORE WEBSITE CONTENT --> 		<div id="mainContent"> 			<div id="errorBar" class="subTitle" onclick="hideIt('errorBar');"> 				<p class="subTitle">Error - This is a list of what has happened / what has gone wrong!</p> 			</div>  			<div class="wrapper"> 				<div class="addSpace"></div> 				<!-- Javascript --> <script>
+// Determine the number of avatars and set values throughout the page accordingly.
+var alt_avatar_list = [{"cname":"Sexy Moon Queen","product_id":"16"},{"cname":"Blood Moon Queen","product_id":"1279"},{"cname":"Moon Prince","product_id":"1479"},{"cname":"Throwback Moon Queen","product_id":"1621"},{"cname":"Eclipse ","product_id":"1952"},{"cname":"POG Moon Queen","product_id":"2330"},{"cname":"Lady Liberty","product_id":"2480"},{"cname":"Gisele","product_id":"2812"},{"cname":"Nian Guardian Moon Queen","product_id":"3469"},{"cname":"Lunari","product_id":"4198"},{"cname":"Moon","product_id":"4938"}];
+// Default values used for Avatars
+var maxA = alt_avatar_list.length+1;
+var sliderValue = 1;
+var currentDiv = "";
+
+$(document).ready(function(){
+	/* If the artwork fails, use default missing image */
+	$('#artwork').error(function(){
+		$('#loading_indicator').hide();
+		$('#artwork').hide();
+		$('#missingArt').show();
+	});
+
+	$('#artwork').load(function(){
+		$('#loading_indicator').hide();
+		$('#artwork').show();
+		$('#missingArt').hide();
+	});
+
+	/* Advanced and simple ability descriptions */
+	$('.switchView').click(function() {
+		if ($(this).hasClass('simple')) {
+			$(this).removeClass('simple');
+			$(this).addClass('advanced');
+			$(this).parent('.theHeader').parent('.abil').find('.theText').find('.simple').hide();
+			$(this).parent('.theHeader').parent('.abil').find('.theText').find('.advanced').show();
+			$(this).parent('.theHeader').find('.subTitleSM').text('Advanced');
+		}
+		else if ($(this).hasClass('advanced')) {
+			$(this).addClass('simple');
+			$(this).removeClass('advanced');
+			$(this).parent('.theHeader').parent('.abil').find('.theText').find('.simple').show();
+			$(this).parent('.theHeader').parent('.abil').find('.theText').find('.advanced').hide();
+			$(this).parent('.theHeader').find('.subTitleSM').text('Simple');
+		}
+	});
+
+	// Bouncy! Bounce!
+	var i=0;
+	$('.fill').each(function(){
+		var j=0; var rand = Math.random();
+		$(this).delay((150*i)+800).each(function(){
+			$(this).delay((30*rand)+75*j++).animate({width: $(this).attr('val')+'%'}, 1500, 'easeOutBounce');
+		});
+		i++;
+	});
+
+	// Checking for SpotgLight Videos, Opening up spotgLight video
+	
+	// Set slider position
+	$( "#slider" ).slider({
+		value: sliderValue,
+		min: 1,
+		max: maxA,
+		step: 1,
+		slide: function( event, ui ) {
+			sliderValue = ui.value;
+			setRotational();
+		},
+		change: function( event, ui ) {
+			setRotational();
+		}
+	});
+
+	setRotational();
+
+	// Change stuff if an icon is clicked
+	$('.iconBorder').click(function() {
+		if ($(this).hasClass('hoverMe')) {
+			if ($(this).is('#first'))
+				sliderValue = sliderValue-2;
+			else if ($(this).is('#second'))
+				sliderValue = sliderValue-1;
+			else if ($(this).is('#forth'))
+				sliderValue = sliderValue+1;
+			else if ($(this).is('#fifth'))
+				sliderValue = sliderValue+2;
+			$( "#slider" ).slider( "value", sliderValue );
+		}
+	});
+});
+
+// Check if this page starts on an alt avatar
+for (var n=0; n<=maxA; n++) {
+	if (window.location.hash == '#hero')
+		sliderValue = 1;
+	else if (window.location.hash == '#alt')
+		sliderValue = 2;
+	else if (window.location.hash == ('#alt' + n))
+		sliderValue = n+1;
+}
+
+// Set page default
+function setRotational() {
+	var i = 1;
+
+	$('.icon').each(function(){
+		if ($(this).parent('.iconBorder').hasClass('hoverMe'))
+			$(this).parent('.iconBorder').removeClass('hoverMe');
+	});
+
+	for (var n=sliderValue-2; n<=maxA+2; n++) {
+		if (i==1)
+			currentDiv = "first";
+		else if (i==2)
+			currentDiv = "second";
+
+		/* This is the current selected alt or hero */
+		else if (i==3) {
+			currentDiv = "third";
+
+			/* Set background artwork */
+			if (n==1)
+				$('#artwork').attr('src', '/images/heroes/20/store_hero.png');
+			else if (n==2)
+				$('#artwork').attr('src', '/images/heroes/20/store_alt.png');
+			else
+				$('#artwork').attr('src', '/images/heroes/20/store_alt' + (n-1) + '.png');
+
+			/* Set alt avatar name */
+			if (sliderValue>1)
+				$('#header .subTitle').text('ALT AVATAR: ' + alt_avatar_list[sliderValue-2]['cname']);
+			else
+				$('#header .subTitle').text('NUMBER OF ALT AVATARS: 11');
+
+			$('#loading_indicator').show();
+			$('#artwork').hide();
+			$('#missingArt').hide();
+
+			$('#artwork').error(function(){
+				$('#loading_indicator').hide();
+				$('#artwork').hide();
+				$('#missingArt').show();
+			});
+
+			$('#artwork').load(function(){
+				$('#loading_indicator').hide();
+				$('#artwork').show();
+				$('#missingArt').hide();
+			});
+		}
+
+		else if (i==4)
+			currentDiv = "forth";
+		else if (i==5)
+			currentDiv = "fifth";
+		else
+			currentDiv = "";
+		
+			if (n>0 && n<=maxA) {
+				$('#' + currentDiv).addClass('hoverMe');
+
+				if (n==1)
+					$('#' + currentDiv).find('.icon').css('background-image', 'url("/images/heroes/20/icon_128.jpg")');
+				else if (n==2)
+					$('#' + currentDiv).find('.icon').css('background-image', 'url("/images/heroes/20/icon_128_alt.jpg")');
+				else
+					$('#' + currentDiv).find('.icon').css('background-image', 'url("/images/heroes/20/icon_128_alt' + (n-1) + '.jpg")');
+			}
+			else {
+				$('#' + currentDiv).find('.icon').css('background-image', 'url("")');
+			}
+
+		i++;
+	}
+
+	if (sliderValue == 1)
+		window.location.hash = '#hero';
+	else if (sliderValue == 2)
+		window.location.hash = '#alt';
+	else
+		window.location.hash = '#alt' + (sliderValue-1);
+}
+</script>   <div class="heroWrapper"> 	<img id="artwork" src="/web/20220629172703im_/https://www.heroesofnewerth.com/heroes/view/20"/> 	<img id="missingArt" src="/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/store_missing.png"/>  	<div id="loading_indicator"> 		<img src="https://web.archive.org/web/20220629172703im_/http://heroesofnewerth.com/images/hon_throb_dark.gif"/> 	</div> </div>  <a href="/web/20220629172703/https://www.heroesofnewerth.com/heroes/" class="btn-blue" style="left: 60px; position: absolute; top: 177px; width: 137px;"> 	<div class="btn-left"></div> 	<div class="btn-center" style="width: 120px !important; height: 23px; padding-top: 5px;">BACK TO HERO LIST</div> 	<div class="btn-right"></div> </a>  <!-- The top section of content (usually will be above the fold) --> <div id="heroTop"> 	<!-- Top left content includes: hero name, alt avatars, hero playstyle, spotgLight, and ability details. --> 	<div class="heroLeft"> 		<!-- HERO NAME, ALT AVATARS, HERO PLAYSTYLE --> 		<div id="header" class="gLight"> 			<p class="title fontXXXL gDark">HERO: MOON QUEEN</p> 			<p class="subTitle fontM">NUMBER OF ALT AVATARS: 11</p> 			<p class="regular fontXXXS greyLight">PLAY STYLE: PHYSICAL MAGIC</p>  			<img id="icon" src="/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/20/icon_128.jpg"/>  							<a id="last" href="/web/20220629172703/https://www.heroesofnewerth.com/heroes/view/18" class="nlbtn btn-white" style="left: 16px;"> 					<div class="btn-left chopped" style="border-radius: 0 0 0 6px;"></div> 					<div class="btn-center chopped" style="width: 74px !important; height: 23px; padding-top: 3px;">PREV HERO</div> 					<div class="btn-right chopped" style="border-radius: 0 0 6px 0;"></div> 				</a> 										<a id="next" href="/web/20220629172703/https://www.heroesofnewerth.com/heroes/view/21" class="nlbtn btn-white" style="left: 112px;"> 					<div class="btn-left chopped" style="border-radius: 0 0 0 6px;"></div> 					<div class="btn-center chopped" style="width: 74px !important; height: 23px; padding-top: 3px;">NEXT HERO</div> 					<div class="btn-right chopped" style="border-radius: 0 0 6px 0;"></div> 				</a> 					</div>  		<!-- HERO SPOTgLight --> 		 		<!-- HERO ABILITIES --> 					<div class="abil simple gLight"> 								<div class="theIcon" style="background-image: url('/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/20/ability1_128.jpg');"><div class="connection"></div></div> 								<div class="theHeader gDark"> 					<div class="key subTitle">Q</div> 					<p class="title fontXXL">Moon Beam<span class="regular fontXXS greyLight">Range: 800   |  Mana Cost: 120 </span></p> 					<div class="switchView clickable simple"></div><p class="regular fontXXS greyLight">Simple</p> 					<div class="floatClear"></div> 				</div> 				<div class="theText"> 					<!-- SIMPLE --> 					<p class="default simple">Target an enemy unit to deal <span style="color: rgb(255,167,0);">75 / 150 / 225 / 300 Magic Damage</span><span style="color: rgb(255,255,255);"> and a </span><span style="color: rgb(255,167,0);">0.75 second Stun</span><span style="color: rgb(255,255,255);">.</span></p>  					<!-- ADVANCED --> 					<div class="default advanced" style="display: none;"> 							<ul> 																	<li><span>Action:</span> Target Entity</li> 																									<li><span>Type:</span> Enemy Units</li> 															</ul>  							<p>The Moon Queen calls upon the power of the moon to strike a target foe, damaging and briefly stunning them.</p><br/> 							<ul class="arrow"> 															</ul> 							<br/>  							 							 													</div> 				</div> 			</div> 					<div class="abil simple gLight"> 								<div class="theIcon" style="background-image: url('/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/20/ability2_128.jpg');"><div class="connection"></div></div> 								<div class="theHeader gDark"> 					<div class="key subTitle">W</div> 					<p class="title fontXXL">Multi-Strike<span class="regular fontXXS greyLight">  </span></p> 					<div class="switchView clickable simple"></div><p class="regular fontXXS greyLight">Simple</p> 					<div class="floatClear"></div> 				</div> 				<div class="theText"> 					<!-- SIMPLE --> 					<p class="default simple">Passively causes attacks to <span style="color: rgb(255,167,0);">bounce up to 1 / 2 / 3 / 5 times</span><span style="color: rgb(255,255,255);">. Each bounce deals 25% less damage per bounce, or 50% less damage if it hits a building.<br/><br/>Toggle to affect only enemy heroes.</span></p>  					<!-- ADVANCED --> 					<div class="default advanced" style="display: none;"> 							<ul> 																	<li><span>Action:</span> No Target</li> 																							</ul>  							<p>The Moon Queen's skill with her Luna Shuriken allows her to bounce it from her primary target to hit additional foes.</p><br/> 							<ul class="arrow"> 															</ul> 							<br/>  							 							 													</div> 				</div> 			</div> 					<div class="abil simple gLight"> 								<div class="theIcon" style="background-image: url('/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/20/ability3_128.jpg');"><div class="connection"></div></div> 								<div class="theHeader gDark"> 					<div class="key subTitle">E</div> 					<p class="title fontXXL">Lunar Glow<span class="regular fontXXS greyLight">  </span></p> 					<div class="switchView clickable simple"></div><p class="regular fontXXS greyLight">Simple</p> 					<div class="floatClear"></div> 				</div> 				<div class="theText"> 					<!-- SIMPLE --> 					<p class="default simple">Passively increases Moon Queen's <span style="color: rgb(255,167,0);">night vision radius by 800 units</span><span style="color: rgb(255,255,255);">, and grants a </span><span style="color: rgb(255,167,0);">5 / 10 / 15 / 20% Base damage</span><span style="color: rgb(255,255,255);"> aura to nearby allied ranged units. </span><span style="color: rgb(255,167,0);">At night, the Base Damage bonus is increased to 15 / 20 / 25 / 30%</span><span style="color: rgb(255,255,255);">.<br/><br/>Toggle to affect only nearby ranged allied heroes. Moon Queen receives 1.5x the damage bonus from this ability.</span></p>  					<!-- ADVANCED --> 					<div class="default advanced" style="display: none;"> 							<ul> 																	<li><span>Action:</span> No Target</li> 																							</ul>  							<p>The Moon Queen radiates the power of the moon to allies around her, increasing the damage they deal with ranged attacks.</p><br/> 							<ul class="arrow"> 															</ul> 							<br/>  							 							 													</div> 				</div> 			</div> 					<div class="abil simple gLight"> 								<div class="theIcon" style="background-image: url('/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/20/ability4_128.jpg');"><div class="connection"></div></div> 								<div class="theHeader gDark"> 					<div class="key subTitle">R</div> 					<p class="title fontXXL">Moon Finale<span class="regular fontXXS greyLight">  Mana Cost: 150,200,250 </span></p> 					<div class="switchView clickable simple"></div><p class="regular fontXXS greyLight">Simple</p> 					<div class="floatClear"></div> 				</div> 				<div class="theText"> 					<!-- SIMPLE --> 					<p class="default simple">Activate to cast <span style="color: rgb(255,167,0);">5 / 8 / 11 Moon Beams</span><span style="color: rgb(255,255,255);"> on random targets around you, up to 4 hits per target.<br/><br/>Moon beams deal </span><span style="color: rgb(255,167,0);">200 / 250 / 300 Magic Damage</span><span style="color: rgb(255,255,255);"> per hit.<br/><br/></span><span style="color: rgb(0,255,0);">Staff of the Master</span><span style="color: rgb(255,255,255);"> adds extra Moon Beams, increases the max hits per target, reduces the time between beams, adds a Mini-Stun, and reduces cooldown.</span></p>  					<!-- ADVANCED --> 					<div class="default advanced" style="display: none;"> 							<ul> 																	<li><span>Action:</span> Target Self</li> 																									<li><span>Type:</span> Visible Enemy Units</li> 															</ul>  							<p>The Moon Queen casts her Moon Beam spell repeatedly for a short duration on random nearby enemies.</p><br/> 							<ul class="arrow"> 															</ul> 							<br/>  							 							 													</div> 				</div> 			</div> 					<div class="abil simple gLight"> 								<div class="theIcon" style="background-image: url('/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/boost_50.gif');"><div class="connection"></div></div> 								<div class="theHeader gDark"> 					<div class="key subTitle"></div> 					<p class="title fontXXL">Attribute Boost<span class="regular fontXXS greyLight">  </span></p> 					<div class="switchView clickable simple"></div><p class="regular fontXXS greyLight">Simple</p> 					<div class="floatClear"></div> 				</div> 				<div class="theText"> 					<!-- SIMPLE --> 					<p class="default simple">+2 Strength<br/>+2 Agility<br/>+2 Intelligence</p>  					<!-- ADVANCED --> 					<div class="default advanced" style="display: none;"> 							<ul> 																							</ul>  							<p>+2 Strength<br/>+2 Agility<br/>+2 Intelligence</p><br/> 							<ul class="arrow"> 															</ul> 							<br/>  							 							 													</div> 				</div> 			</div> 			</div>  	<!-- Top right content includes: hero artwork and avatar artwork --> 	<div class="heroRight"> 		<div id="altHolder"> 			<div id="first" class="iconBorder gDark sm"><div class="icon"></div></div> 			<div id="second" class="iconBorder gDark med"><div class="icon"></div></div> 			<div id="third" class="iconBorder gDark lg"><div class="icon"></div></div> 			<div id="forth" class="iconBorder gDark med"><div class="icon"></div></div> 			<div id="fifth" class="iconBorder gDark sm"><div class="icon"></div></div> 		</div> 		<div id="slider"></div> 	</div> 	<div class="floatClear"></div> </div>  <!-- The bottom section of content (usually will be below the fold) --> <div id="heroBottom">  	<!-- Bottom left content includes: hero stats, advanced hero stats, and hero usage. --> 	<div class="heroLeft">  		<!-- HERO STATS --> 		<div id="stats"> 			<div class="theHeader"> 				<p class="title fontXXL">HERO STATS</p> 				<div class="floatClear"></div> 			</div>  			<div class="theText"> 				<div style="float: left; width: 110px;"> 					<p class="subTitle fontXXS">HEALTH: 435</p> 					<p class="subTitle fontXXS">DAMAGE: 48-54</p> 					<p class="subTitle fontXXS">MANA: 208</p> 					<p class="subTitle fontXXS">ARMOR: 2.8</p> 					<p class="subTitle fontXXS">DIFFICULTY: 2</p> 				</div>  				<div class="bar"> 					<div class="fill health" val="69.6"></div> 				</div>  				<div class="bar"> 					<div class="fill damage" val="79.6875"></div> 				</div>  				<div class="bar"> 					<div class="fill mana" val="57.142857142857"></div> 				</div>  				<div class="bar"> 					<div class="fill armor" val="44.025157232704"></div> 				</div>  				<div class="bar"> 					<div class="fill difficulty" val="40"></div> 				</div> 			</div> 			<div class="floatClear"></div> 		</div>  		<!-- ADVANCED HERO STATS --> 		<div id="advStats"> 			<div class="theHeader"> 				<p class="title fontXXL">ADVANCED HERO STATS</p> 				<div class="floatClear"></div> 			</div>  			<div class="theText"> 				<div class="statCol"> 					<p class="subTitle fontXXS">STRENGTH: 15 ( +2 )</p> 					<p class="subTitle fontXXS">INTELLIGENCE: 16 ( +1.9 )</p> 					<p class="subTitle fontXXS">AGILITY: 20 ( +3.5 )</p> 				</div>  				<div class="statCol"> 					<p class="subTitle fontXXS">RANGE: 350</p> 					<p class="subTitle fontXXS">ATTACK SPEED: 0.71</p> 					<p class="subTitle fontXXS">MOVEMENT SPEED: 330</p> 				</div> 			</div> 			<div class="floatClear"></div> 		</div> 		<div id="usage"> 			<div class="theHeader"> 				<p class="title fontXXL">HERO USAGE<span style="color: #FFAA00">(LAST 7 DAYS)</span></p> 				<div class="floatClear"></div> 			</div>  			<div class="theText"> 				<div class="statCol"> 					<p class="subTitle fontXXS">USED: 82</p> 					<p class="subTitle fontXXS">WINS: 48 (58.5%)</p> 					<p class="subTitle fontXXS">LOSSES: 34 (41.5%)</p> 				</div>  				<div class="statCol"> 					<p class="subTitle fontXXS">AVG K/D/A: 6.3 / 5.8 / 6.2</p> 					<p class="subTitle fontXXS">AVG GPM: 419.332</p> 					<p class="subTitle fontXXS">AVG CREEP KILLS: 201.2</p> 				</div> 			</div> 			<div class="floatClear"></div> 		</div> 	</div>  	<!-- Bottom right content includes: how to play the hero and hero lore. --> 	<div class="heroRight">  		<div id="how" class="gLight"> 			<div class="theHeader gDark"> 				<p class="title fontXXL">HOW TO PLAY</p> 				<div class="floatClear"></div> 			</div>  			<div class="theText" style="min-height: 24px;"> 				<p class="default">Learn more on how to play this hero!</p> 			</div>  			<a href="/web/20220629172703/https://www.heroesofnewerth.com/guides/hero/20/" class="btn-blue" style="float: right; margin: 10px 1px 4px 0; width: 117px;"> 				<div class="btn-left"></div> 				<div class="btn-center" style="width: 100px !important; height: 23px; padding-top: 5px;">HERO GUIDES</div> 				<div class="btn-right"></div> 			</a> 			<div class="floatClear"></div> 		</div>  		<!-- HERO LORE --> 		<div id="lore" class="gLight"> 			<div class="theHeader gDark"> 				<p class="title fontXXL">HERO LORE</p> 				<div class="floatClear"></div> 			</div>  			<div class="theText"> 				<p class="default">The insectoid Moon Warriors never entered into the great war between Man and Beast, but when the Hellbourne threatened Newerth, their very queen emerged to lead her people against the daemons.  With powers drawn from the moon and from the shared will of her hive, this strange creature is a mighty boon for the Legion.</p> 			</div>  			<div class="floatClear"></div> 		</div> 	</div> 	<div class="floatClear"></div> </div>  <div id="spotHolder"> 	<div id="spotAbil"> 		<a class="theIcon isSpotgLight" style="background-image: url('/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/20/ability1_128.jpg');"><div class="connection"></div></a> 		<a class="theIcon isSpotgLight" style="background-image: url('/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/20/ability2_128.jpg');"><div class="connection"></div></a> 		<a class="theIcon isSpotgLight" style="background-image: url('/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/20/ability3_128.jpg');"><div class="connection"></div></a> 		<a class="theIcon isSpotgLight" style="background-image: url('/web/20220629172703im_/https://www.heroesofnewerth.com/images/heroes/20/ability4_128.jpg');"><div class="connection"></div></a> 	</div>  	<div id="spotBorders" class="gLight"> 		<div id="hero_bio_vid_alt"></div> 	</div> </div>  				<div class="floatClear"></div> 			</div>  			<div id="lightbox_notMedia" class="parent_panel"></div> 		</div>  		<!-- The Actual Footer --> 		<div id="footer"> 			<div style="width: 1040px; margin: auto; height: 100%; padding: 0 30px;"> 				<div class="col left"> 					<p class="footHead subTitle fontXL">COMMUNITY</p> 					<p class="footList default"> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/">NEWS</a><br/> 						<a href="https://web.archive.org/web/20220629172703/http://www.honcast.com/">HONCAST</a><br/> 						<a href="https://web.archive.org/web/20220629172703/http://www.hontour.com/">HON TOUR</a><br/> 						<!-- <a href="/ladder/">PLAYER LADDER</a><br /> --> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/fanmedia/">FAN MEDIA</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/fansites/">COMMUNITY SITES</a> 					</p> 				</div> 				<div class="col left"> 					<p class="footHead subTitle fontXL">GAMEPLAY</p> 					<p class="footList default"> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/heroes/">HEROES</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/items/">ITEMS</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/guides/">STRATEGY GUIDES</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/maps/">MAPS</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/matchstats/">MATCH STATS [NEW]</a> 					</p> 				</div> 				<div class="col left"> 					<p class="footHead subTitle fontXL">STORE</p> 					<p class="footList default"> 						<!-- <a href="/store/gold/">BUY GOLD COINS</a><br /> --> 						<!--<a target="_blank" href="/store/ecards/">GIFT AN ECARD</a><br /> --> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/store/accounticon/">CUSTOM ACCOUNT ICON</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/store/subaccount/">ADD A SUB ACCOUNT</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/store/reset/">RESET ACCOUNT STATS</a>  					</p> 				</div> 				<div class="col left"> 					<p class="footHead subTitle fontXL">MEDIA</p> 					<p class="footList default"> 						<a target="_blank" href="https://web.archive.org/web/20220629172703/http://www.youtube.com/s2games">VIDEOS</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/art/">ARTWORK</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/wallpaper/">WALLPAPERS</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/screens/">SCREENSHOTS</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/fanmedia/">FAN MEDIA</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/media/fsk/">FANKIT</a> 					</p> 				</div> 				<div class="col left"> 					<p class="footHead subTitle fontXL">FORUMS</p> 					<p class="footList default"> 					<a href="https://web.archive.org/web/20220629172703/http://forums.heroesofnewerth.com/">MAIN</a><br/> 					<a href="https://web.archive.org/web/20220629172703/http://forums.heroesofnewerth.com/forumdisplay.php?83">COMMUNITY POSITIONS</a><br/> 					<a href="https://web.archive.org/web/20220629172703/http://forums.heroesofnewerth.com/forumdisplay.php?321">EVENTS</a><br/> 					</p> 				</div> 				<div class="col left"> 					<p class="footHead subTitle fontXL">SERVICES</p> 					<p class="footList default"> 						<!-- <a href="/create/">CREATE AN ACCOUNT</a><br /> --> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/download/">DOWNLOAD CLIENT</a><br/> 						<a href="/web/20220629172703/https://www.heroesofnewerth.com/support/">SUPPORT</a><br/> 						<a href="https://web.archive.org/web/20220629172703/http://rap.heroesofnewerth.com/">PLAYER RAP</a><br/>						 					</p> 				</div>  				<div id="details" class="left regular fontXXS greyDark"> 					&#169;2022 Frostburn Studios, All Rights Reserved. <br/> 					<a href="/web/20220629172703/https://www.heroesofnewerth.com/documents/tos/">TERMS OF SERVICE</a> | <a href="/web/20220629172703/https://www.heroesofnewerth.com/documents/policy/">PRIVACY POLICY</a> | <a href="/web/20220629172703/https://www.heroesofnewerth.com/documents/media/">MEDIA POLICY</a> | <a href="/web/20220629172703/https://www.heroesofnewerth.com/documents/partners/">PARTNERS</a> <!--| <a href="/documents/credits/">CREDITS</a> --> | <a href="https://web.archive.org/web/20220629172703/http://frostburnstudios.com/careers.php">JOBS</a> 				</div> 			</div> 		</div>  		<div id="dialog-message" title="" style="display: none;"> 			<p><span class="ui-icon ui-icon-alert left" style="margin: 0 7px 20px 0;"></span><span id="dialog-message-contents"></span></p> 		</div>         		<script type="text/javascript">
+				var Login = {
+					Login: function(nickname, password, ret)
+					{
+						if (nickname && password)
+						{
+							var loginObj = {
+								"nickname": nickname,
+								"password": password,
+							}
+							$.ajax({
+								url: '/login/login/?ajax=1',
+								type: 'post',
+								data: loginObj,
+								dataType: 'json'
+							}).done( function( data, textStatus, jqXHR )
+							{
+								if (jqXHR.getResponseHeader('ajax-redirect'))
+								{
+									window.location.href = jqXHR.getResponseHeader('ajax-redirect');
+									return;
+								}
+								if (data.error == false)
+								{
+									// Redirect if requested
+									if (ret)
+									{
+										document.location.href = ret;
+									}
+									else
+									{
+										document.location.href = document.location.href;
+									}
+									return;
+								}
+								else
+								{
+									$('#dialog-message-contents').html(data.errorList);
+									$('#dialog-message').prop('title', 'Login Error').dialog({
+										modal: true,
+										buttons: {
+											Ok: function() {
+												$(this).dialog('close');
+											}
+										}
+									});
+								}
+							});
+						}
+					},
+					Logout: function( )
+					{
+						$.post('/login/logout', {}, function( data )
+						{
+							console.log( "Logged out" );
+							window.location = "/";
+						});
+					}
+				};
+
+				/* <![CDATA[ */
+				var google_conversion_id = 1002261595;
+				var google_conversion_label = "w6FDCIXejwQQ25j13QM";
+				var google_custom_params = window.google_tag_params;
+				var google_remarketing_only = true;
+				/* ]]> */
+
+				/* OUR ORIGINAL GOOGLE ANALYTICS */
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-35559700-1']);
+
+													_gaq.push(['_setCustomVar', 2, 'login', 'false', 2]);
+								_gaq.push(['_trackPageview']);
+				
+				(function() {
+					var ga = document.createElement('script');
+					ga.type = 'text/javascript';
+					ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(ga, s);
+				})();
+		</script> 		<script type="text/javascript" src="//web.archive.org/web/20220629172703js_/https://www.googleadservices.com/pagead/conversion.js">
+		</script> 		<noscript> 			<div style="display:inline;"> 				<img height="1" width="1" style="border-style:none;" alt="" src="//web.archive.org/web/20220629172703im_/https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1002261595/?value=0&amp;label=w6FDCIXejwQQ25j13QM&amp;guid=ON&amp;script=0"/> 			</div> 		</noscript> 		<div class="floatClear"></div> 	</body> </html> <!--      FILE ARCHIVED ON 17:27:03 Jun 29, 2022 AND RETRIEVED FROM THE      INTERNET ARCHIVE ON 01:58:08 Feb 16, 2023.      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.       ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.      SECTION 108(a)(3)). --> <!-- playback timings (ms):   captures_list: 114.256   exclusion.robots: 0.146   exclusion.robots.policy: 0.139   cdx.remote: 0.054   esindex: 0.008   LoadShardBlock: 69.826 (3)   PetaboxLoader3.datanode: 87.573 (4)   CDXLines.iter: 13.615 (3)   load_resource: 240.995   PetaboxLoader3.resolve: 119.479 -->
